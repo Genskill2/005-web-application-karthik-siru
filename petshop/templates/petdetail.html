@@ -17,6 +17,9 @@
   <a class="tag" href="{{url_for('pets.search', field='tag', value=t)}}"><span class="badge bg-secondary">{{t}}</span></a>
   {% endfor %}
 </p>
+<p class="description"> 
+  {{description}}
+</p>
 <p>
   <a class="btn btn-primary" href="{{url_for('pets.edit', pid=id)}}">Edit</a>
 </p>
